@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="chahd chami">
+	<title>projet</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+	<header class="entete">
+    <a class="logo" href="index.html">VAN GOGH</a>
+    <nav class="menu" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="page1.html" class="actif">Biographie</a>
+      <a href="page2.html">Style</a>
+      <a href="page3.html">Œuvres</a>
+      <a href="page4.html">Héritage</a>
+      <a href="page5.html">Contact</a>
+    </nav>
+  </header>
+  <section class="titre-page">
+    <h1>Biographie de Vincent van Gogh</h1>
+  </section>
+
+  <section class="musique">
+    <p>Ambiance musicale</p>
+    <audio id="audio" src="multimedia/c.mp3" controls loop autoplay></audio>
+  </section>
+
+  <main>
+
+    <section class="bio">
+      <h2>1. Son enfance et sa jeunesse</h2>
+      <p>
+        Van Gogh grandit dans une famille religieuse. Son père était pasteur
+        et sa mère aimait beaucoup l'art et la nature.
+      </p>
+      <p>
+        Avant de devenir peintre, il a exercé plusieurs métiers, notamment dans
+        le commerce d'œuvres d'art et dans le domaine religieux. Ces expériences
+        ont contribué à développer son intérêt pour les personnes et la vie quotidienne.
+      </p>
+    </section>
+
+    <section class="bio">
+      <h2>2. Le début de sa carrière artistique</h2>
+      <p>En 1880, à l'âge de 27 ans, il décide de se consacrer entièrement à la peinture.</p>
+      <p>
+        Au début de sa carrière, il réalise principalement des dessins et des tableaux
+        aux couleurs sombres, représentant des paysans et des travailleurs.
+      </p>
+      <p>
+        En 1885, il peint l'une de ses premières œuvres importantes :
+        <em>Les Mangeurs de pommes de terre</em>.
+      </p>
+      <figure>
+        <img src="images/m.jpg" alt="Les Mangeurs de pommes de terre, tableau de Vincent van Gogh (1885)" onclick="this.classList.toggle('agrandie')">
+        <figcaption>
+          En 1885, il peint l'une de ses premières œuvres importantes :
+          <em>Les Mangeurs de pommes de terre</em>.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="bio">
+      <h2>3. Les années à Paris et à Arles</h2>
+      <p>
+        En 1886, Van Gogh s'installe à Paris, où il découvre les nouvelles tendances
+        artistiques et rencontre plusieurs peintres impressionnistes.
+      </p>
+      <p>
+        En 1888, il part vivre à Arles, dans le sud de la France. Cette période est
+        particulièrement productive : il réalise de nombreux tableaux avec des couleurs
+        vives et lumineuses, notamment <em>Les Tournesols</em>.
+      </p>
+      <figure>
+        <img src="images/t.jpg" alt="Les Tournesols, tableau de Vincent van Gogh (1888)" onclick="this.classList.toggle('agrandie')">
+        <figcaption>
+          En aout 1888, Vincent van Gogh réalise sa célèbre série de tableaux intitulée :
+          <em>Les Tournesols</em>.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="bio">
+      <h2>4. Ses dernières années</h2>
+      <p>
+        Van Gogh souffre de troubles psychologiques qui affectent profondément sa vie.
+        En 1888, après une crise, il est hospitalisé à Arles.
+      </p>
+      <p>
+        En 1889, il séjourne à l'asile de Saint-Rémy-de-Provence, où il continue à
+        peindre et réalise notamment <em>La Nuit étoilée</em>.
+      </p>
+      <figure>
+        <img src="images/n.jpg" alt="La Nuits étoilée, tableau de Vincent van Gogh (1889)" onclick="this.classList.toggle('agrandie')">
+        <figcaption>
+          En juin 1889, Vincent van Gogh peint son célèbre chef-d'oeuvre :
+          <em>La Nuits étoilée</em>.
+        </figcaption>
+      </figure>
+      <p>
+        En mai 1890, il s'installe à Auvers-sur-Oise, près de Paris, où il poursuit
+        son travail artistique.
+      </p>
+      <p>Il meurt le 29 juillet 1890, à l'âge de 37 ans.</p>
+    </section>
+
+    <section class="dates">
+      <h2>Quelques dates importantes</h2>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Année</th>
+            <th scope="col">Événement</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1853</td><td>Naissance aux Pays-Bas</td></tr>
+          <tr><td>1880</td><td>Début de sa carrière de peintre</td></tr>
+          <tr><td>1885</td><td>Réalisation des <em>Mangeurs de pommes de terre</em></td></tr>
+          <tr><td>1886</td><td>Installation à Paris</td></tr>
+          <tr><td>1888</td><td>Installation à Arles</td></tr>
+          <tr><td>1889</td><td>Séjour à Saint-Rémy</td></tr>
+          <tr><td>1890</td><td>Décès à Auvers-sur-Oise</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <footer class="pied">
+    <p>© 2026 – Site consacré à Vincent van Gogh - copyright by Chahd Chami</p>
+  </footer>
+
+  <script>
+    const audio = document.getElementById("audio");
+    audio.volume = 0.2;
+    audio.play().catch(() => {
+      document.addEventListener("click", () => audio.play(), { once: true });
+    });
+  </script>
+
+
+</body>
+</html>

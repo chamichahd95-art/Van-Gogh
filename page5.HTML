@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="chahd chami">
+  <title>projet</title>
+  <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+  <header class="entete">
+    <a class="logo" href="index.html">VAN GOGH</a>
+    <nav class="menu" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="page1.html">Biographie</a>
+      <a href="page2.html">Style</a>
+      <a href="page3.html">Œuvres</a>
+      <a href="page4.html">Héritage</a>
+      <a href="page5.html"  class="actif">Contact</a>
+    </nav>
+  </header>
+  <section class="titre-page">
+    <h1>Restons en contact !</h1>
+  </section>
+
+  <section class="musique">
+    <p>Ambiance musicale</p>
+    <audio id="audio" src="multimedia/r.mp3" controls loop></audio>
+  </section>
+
+  <main>
+
+    <section class="bio">
+      <p>
+        Merci d'avoir visité mon site consacré à Vincent van Gogh et à son univers artistique.
+      </p>
+      <p>
+        J'espère que cette découverte vous a permis de mieux connaître sa vie, ses œuvres
+        et son influence sur l'histoire de l'art.
+      </p>
+      <p>
+        Vous avez une question, une suggestion ou une remarque ? N'hésitez pas à me contacter
+        en remplissant le formulaire ci-dessous.
+      </p>
+    </section>
+
+    <section class="bio">
+      <h2>Formulaire de contact</h2>
+      <p class="sous-formulaire">Envoyez-moi un message</p>
+
+      <form class="formulaire" id="formulaire">
+
+        <fieldset class="civilite">
+          <legend>Civilité</legend>
+          <label><input type="radio" name="civilite" value="M." required> M.</label>
+          <label><input type="radio" name="civilite" value="Mme"> Mme</label>
+          <label><input type="radio" name="civilite" value="Mlle"> Mlle</label>
+        </fieldset>
+
+        <div class="ligne">
+          <div class="champ">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" required>
+          </div>
+          <div class="champ">
+            <label for="prenom">Prénom</label>
+            <input type="text" id="prenom" name="prenom" required>
+          </div>
+        </div>
+
+        <div class="ligne">
+          <div class="champ">
+            <label for="naissance">Date de naissance</label>
+            <input type="date" id="naissance" name="naissance">
+          </div>
+          <div class="champ">
+            <label for="pays">Pays</label>
+            <select id="pays" name="pays">
+              <option value="">Choisir un pays</option>
+              <option>Tunisie</option>
+              <option>France</option>
+              <option>Algérie</option>
+              <option>Maroc</option>
+              <option>Pays-Bas</option>
+              <option>Belgique</option>
+              <option>Canada</option>
+              <option>Autre</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="ligne">
+          <div class="champ">
+            <label for="ville">Ville</label>
+            <input type="text" id="ville" name="ville">
+          </div>
+          <div class="champ">
+            <label for="email">Adresse e-mail</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
+
+        <div class="champ">
+          <label for="message">Votre message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+
+        <div class="boutons">
+          <button type="submit" class="btn btn-valider">Valider</button>
+          <button type="reset" class="btn btn-recommencer">Recommencer</button>
+        </div>
+
+        <p class="confirmation" id="confirmation" hidden>
+          Merci ! Votre message a bien été envoyé.
+        </p>
+
+      </form>
+    </section>
+
+    <section class="bio">
+      <h2>Mes coordonnées</h2>
+      <ul class="coordonnees">
+        <li><strong>Nom et prénom :</strong> Chahd Chami</li>
+        <li><strong>Adresse :</strong> Université de médecine de Sfax</li>
+        <li><strong><a href="mailto:chamichahd95@gmail.com">Email :</strong> chamichahd95@gmail.com</a></li>
+        <li><strong><a href="tel:+21629970055">Tél :</strong> +21629970055</a></li>
+      </ul>
+
+      <div class="plan">
+        <iframe
+          src="https://www.google.com/maps?q=Facult%C3%A9+de+M%C3%A9decine+de+Sfax&output=embed"
+          title="Carte : Université de médecine de Sfax"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+
+    <section class="bio bio-conclusion">
+      <h2>Merci pour votre visite !</h2>
+      <p class="derniere-citation">« L'art permet de voir le monde autrement. »</p>
+    </section>
+
+  </main>
+
+  <footer class="pied">
+    <p>© 2026 – Site consacré à Vincent van Gogh - copyright by Chahd Chami</p>
+  </footer>
+
+  <script>
+    const audio = document.getElementById("audio");
+    audio.volume = 0.2;
+    audio.play().catch(() => {
+      document.addEventListener("click", () => audio.play(), { once: true });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="chahd chami">
+  <title>projet</title>
+  <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+  <header class="entete">
+    <a class="logo" href="index.html">VAN GOGH</a>
+    <nav class="menu" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="page1.html">Biographie</a>
+      <a href="page2.html">Style</a>
+      <a href="page3.html">Œuvres</a>
+      <a href="page4.html" class="actif">Héritage</a>
+      <a href="page5.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="titre-page">
+    <h1>Son héritage et son influence artistique</h1>
+    <p class="sous-titre">Un artiste reconnu dans le monde entier</p>
+  </section>
+
+  <section class="musique">
+    <p>Ambiance musicale</p>
+    <audio id="audio" src="multimedia/experience.mp3" controls loop></audio>
+  </section>
+
+  <main>
+
+    <section class="bio">
+      <p>
+        Même si Vincent van Gogh n'a pas connu une grande reconnaissance commerciale
+        pendant sa vie, son travail est devenu <strong>extrêmement célèbre après sa mort</strong>.
+      </p>
+      <p>
+        Aujourd'hui, il est considéré comme l'un des artistes les plus influents
+        de l'histoire de la peinture.
+      </p>
+    </section>
+
+    <section class="bio">
+      <h2>1. Son influence sur l'art moderne</h2>
+      <p>
+        Van Gogh a contribué à transformer la peinture grâce à sa liberté artistique
+        et à son utilisation expressive des couleurs.
+      </p>
+      <p>Son travail a influencé plusieurs mouvements artistiques, notamment :</p>
+      <ul class="pastilles">
+        <li>Le fauvisme</li>
+        <li>L'expressionnisme</li>
+      </ul>
+    </section>
+
+    <section class="bio">
+      <h2>2. La reconnaissance de ses œuvres</h2>
+      <p>
+        Après sa mort, son frère Theo et surtout sa belle-sœur
+        <strong>Johanna van Gogh-Bonger</strong> ont joué un rôle important dans la
+        conservation et la diffusion de ses œuvres et de sa correspondance.
+      </p>
+      <p>
+        Progressivement, ses tableaux ont été exposés dans de nombreuses galeries
+        et musées internationaux.
+      </p>
+    </section>
+
+    <section class="bio">
+      <h2>3. Où peut-on admirer ses œuvres ?</h2>
+      <div class="musees">
+
+        <article class="musee">
+          <img src="images/m1.jpg"
+               alt="Le Van Gogh Museum à Amsterdam"
+               onclick="this.classList.toggle('agrandie')">
+          <div class="musee-texte">
+            <h3>Le Van Gogh Museum</h3>
+            <p class="lieu">Amsterdam, Pays-Bas</p>
+            <p>Il possède une importante collection de tableaux, dessins et lettres de l'artiste.</p>
+          </div>
+        </article>
+
+        <article class="musee">
+          <img src="images/m2.jpg"
+               alt="Le Musée d'Orsay à Paris"
+               onclick="this.classList.toggle('agrandie')">
+          <div class="musee-texte">
+            <h3>Le Musée d'Orsay</h3>
+            <p class="lieu">Paris, France</p>
+            <p>Il expose plusieurs œuvres importantes de Van Gogh.</p>
+          </div>
+        </article>
+
+        <article class="musee">
+          <img src="images/m3.jpg"
+               alt="Le Musée Kröller-Müller aux Pays-Bas"
+               onclick="this.classList.toggle('agrandie')">
+          <div class="musee-texte">
+            <h3>Le Musée Kröller-Müller</h3>
+            <p class="lieu">Pays-Bas</p>
+            <p>Il possède une importante collection de peintures et de dessins de l'artiste.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="bio">
+      <h2>Découvrez le Van Gogh Museum !</h2>
+      <p>
+        Regardez cette vidéo pour découvrir le musée et ses œuvres. Pour une visite plus
+        complète, retrouvez d'autres vidéos sur la chaîne YouTube officielle :
+        <strong>@VanGoghMuseum</strong>.
+      </p>
+      <div class="video-cadre">
+        <<video controls preload="metadata" poster="images/cc.jpg">
+          <source src="multimedia/v.mp4" type="video/mp4">
+          Votre navigateur ne peut pas lire cette vidéo.
+        </video>
+      </div>
+      <p class="lien-video">
+        <a class="bouton" href="https://www.youtube.com/@VanGoghMuseum" target="_blank" rel="noopener">
+          Voir la chaîne YouTube officielle →
+        </a>
+      </p>
+    </section>
+
+    <section class="bio">
+      <h2>4. Quelques faits intéressants</h2>
+      <ul class="faits">
+        <li>Van Gogh a réalisé de nombreux autoportraits, notamment parce qu'il ne pouvait pas toujours payer des modèles.</li>
+        <li>Il a écrit de nombreuses lettres à son frère Theo.</li>
+        <li>Il a produit une grande partie de son œuvre pendant les dix dernières années de sa vie.</li>
+        <li>Son tableau <em>La Vigne rouge</em> est considéré comme l'une des rares œuvres vendues de son vivant.</li>
+        <li>Son style est aujourd'hui reconnaissable dans le monde entier.</li>
+      </ul>
+      <figure class="vigne">
+        <img src="images/h.jpg"
+             alt="La Vigne rouge, tableau de Vincent van Gogh (1888)"
+             onclick="this.classList.toggle('agrandie')">
+        <figcaption>
+          <strong>La Vigne rouge (1888)</strong> : l'une des rares œuvres vendues
+          du vivant de Van Gogh.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="bio bio-conclusion">
+      <h2>Conclusion</h2>
+      <p>
+        Vincent van Gogh a laissé un héritage artistique exceptionnel. Son histoire nous
+        rappelle que l'art est aussi un moyen d'exprimer les émotions, les expériences et
+        la vision personnelle du monde.
+      </p>
+      <p>
+        Son œuvre continue d'inspirer les artistes et de toucher les générations à travers
+        le monde.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="pied">
+    <p>© 2026 – Site consacré à Vincent van Gogh - copyright by Chahd Chami</p>
+  </footer>
+
+  <script>
+    const audio = document.getElementById("audio");
+    audio.volume = 0.2;
+    audio.play().catch(() => {
+      document.addEventListener("click", () => audio.play(), { once: true });
+    });
+  </script>
+
+</body>
+</html>
+

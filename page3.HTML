@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="chahd chami">
+  <title>projet</title>
+  <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+  <header class="entete">
+    <a class="logo" href="index.html">VAN GOGH</a>
+    <nav class="menu" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="page1.html">Biographie</a>
+      <a href="page2.html">Style</a>
+      <a href="page3.html" class="actif">Œuvres</a>
+      <a href="page4.html">Héritage</a>
+      <a href="page5.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="titre-page">
+    <h1>Ses œuvres célèbres</h1>
+    <p class="sous-titre">Une galerie de chefs-d'œuvre</p>
+  </section>
+  <section class="musique">
+    <p>Ambiance musicale</p>
+    <audio id="audio" src="multimedia/a.mp3" controls loop autoplay></audio>
+  </section>
+
+  <main>
+
+    <section class="bio">
+      <p>
+        Vincent van Gogh a réalisé environ <strong>2 100 œuvres</strong>, dont près de
+        <strong>860 peintures à l'huile</strong>. Plusieurs de ses tableaux sont aujourd'hui
+        considérés comme des chefs-d'œuvre de l'histoire de l'art.
+      </p>
+    </section>
+
+    <article class="bio oeuvre">
+      <div class="oeuvre-photo">
+        <img src="images/n.jpg" alt="La Nuit étoilée de Vincent van Gogh (1889)" onclick="this.classList.toggle('agrandie')">
+        <span class="oeuvre-etiquette">La Nuit étoilée · 1889</span>
+      </div>
+      <div class="oeuvre-texte">
+        <h2>1. La Nuit étoilée (1889)</h2>
+        <p>
+          Peinte en juin 1889, cette œuvre représente un paysage nocturne avec un ciel
+          rempli d'étoiles lumineuses et de mouvements tourbillonnants.
+        </p>
+        <p>
+          Elle est célèbre pour ses couleurs bleues et jaunes et son atmosphère mystérieuse.
+        </p>
+      </div>
+    </article>
+
+    <article class="bio oeuvre">
+      <div class="oeuvre-photo">
+        <img src="images/t.jpg" alt="Les Tournesols de Vincent van Gogh (1888)" onclick="this.classList.toggle('agrandie')">
+        <span class="oeuvre-etiquette">Les Tournesols · 1888</span>
+      </div>
+      <div class="oeuvre-texte">
+        <h2>2. Les Tournesols (1888)</h2>
+        <p>
+          Cette série de peintures représente des tournesols dans des vases. Van Gogh
+          utilise différentes nuances de jaune et d'orange pour transmettre une impression
+          de lumière et de chaleur.
+        </p>
+      </div>
+    </article>
+
+    <article class="bio oeuvre">
+      <div class="oeuvre-photo">
+        <img src="images/k.jpg" alt="La Chambre à Arles de Vincent van Gogh (1888)" onclick="this.classList.toggle('agrandie')">
+        <span class="oeuvre-etiquette">La Chambre à Arles · 1888</span>
+      </div>
+      <div class="oeuvre-texte">
+        <h2>3. La Chambre à Arles (1888)</h2>
+        <p>
+          Ce tableau représente la chambre de l'artiste à Arles. Les couleurs simples
+          et les formes particulières créent une atmosphère intime et personnelle.
+        </p>
+      </div>
+    </article>
+
+    <article class="bio oeuvre">
+      <div class="oeuvre-photo">
+        <img src="images/a.jpg" alt="Autoportrait de Vincent van Gogh (1889)" onclick="this.classList.toggle('agrandie')">
+        <span class="oeuvre-etiquette">Autoportrait · 1889</span>
+      </div>
+      <div class="oeuvre-texte">
+        <h2>4. Autoportrait (1889)</h2>
+        <p>
+          Van Gogh a réalisé de nombreux autoportraits. Dans celui-ci, il utilise des
+          couleurs contrastées et des coups de pinceau dynamiques pour représenter
+          son visage et son expression.
+        </p>
+      </div>
+    </article>
+
+    <article class="bio oeuvre">
+      <div class="oeuvre-photo">
+        <img src="images/j.jpg" alt="Champ de blé aux corbeaux de Vincent van Gogh (1890)" onclick="this.classList.toggle('agrandie')">
+        <span class="oeuvre-etiquette">Champ de blé aux corbeaux · 1890</span>
+      </div>
+      <div class="oeuvre-texte">
+        <h2>5. Champ de blé aux corbeaux (1890)</h2>
+        <p>
+          Cette œuvre représente un champ de blé sous un ciel sombre, avec des corbeaux
+          en mouvement. Elle se distingue par ses couleurs contrastées et son atmosphère
+          dramatique.
+        </p>
+      </div>
+    </article>
+
+   <section class="bio bio-conclusion">
+      <h2>Pourquoi ses œuvres sont-elles célèbres ?</h2>
+      <p>
+        Elles sont appréciées pour leur originalité, leur intensité émotionnelle et leur
+        capacité à transmettre une vision personnelle de la réalité.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="pied">
+    <p>© 2026 – Site consacré à Vincent van Gogh - copyright by Chahd Chami</p>
+  </footer>
+
+  <script>
+    const audio = document.getElementById("audio");
+    audio.volume = 0.2;
+    audio.play().catch(() => {
+      document.addEventListener("click", () => audio.play(), { once: true });
+    });
+  </script>
+
+</body>
+</html>
